@@ -10,3 +10,13 @@ int collatz(int n) {
   return 3 * n + 1;
 
 }
+
+//boolean end(int n) {
+
+//   if(n == 1) {
+   
+//   return True;
+     
+//   }
+
+//}
