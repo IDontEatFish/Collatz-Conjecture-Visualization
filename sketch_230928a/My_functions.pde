@@ -1,22 +1,22 @@
-int collatz(int n) {
+boolean oddsEven(int n) {
 
-  if (n % 2 == 0) {
-    println("Even");
-    return n / 2;
-  
+  if (n % 2 == 0 ) {
+    return true;
   }
-  
-  println("Odd");
-  return 3 * n + 1;
 
+
+  return false;
 }
 
-//boolean end(int n) {
 
-//   if(n == 1) {
-   
-//   return True;
-     
-//   }
 
-//}
+boolean end(int n) {
+
+  if (n == 1) {
+
+    return true;
+  } else {
+
+    return false;
+  }
+}
