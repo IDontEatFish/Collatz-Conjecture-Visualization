@@ -1,11 +1,9 @@
-void mouseClicked() { 
- 
-  
+void mouseClicked() {
+
+
   checkButtons();
 
 
- 
-create_GUI();  
 
-  
+  create_GUI();
 }

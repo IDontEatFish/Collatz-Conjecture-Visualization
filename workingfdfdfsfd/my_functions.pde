@@ -23,6 +23,9 @@ void create_text(float clockwise_angle, float counterclockwise_angle, int strech
   String strech_text = ("Strech: " + str(strech));
 
   text(strech_text, width/40, height/5.6);
+  
+  
+  text("Press backspace to reset", width/40, height/4.4);
 }
 
 
@@ -42,7 +45,7 @@ void create_button(float rectX, float rectY, int rectSize, color rectColor, Stri
 
 void create_GUI() {
 
-  drawOverText(20, 23, 493, 177);
+  drawOverText(20, 23, 493, 195);
 
   fill(255, 255, 255);
   create_text(clockwise_angle, counterclockwise_angle, strech);
@@ -101,16 +104,10 @@ void checkButtons() {
     if (j == 2) {
 
       if (mouseX >= buttonLocation[j][0 ] && mouseX <= buttonLocation[j][0] + rectSize && mouseY >=  buttonLocation[j][1] && mouseY <= buttonLocation[j][1] + rectSize) {
-        
+
         strech += 1;
-        
-        
-        
-      }
-      
-      else if (mouseX >= buttonLocation[j][2] && mouseX <= buttonLocation[j][2] + rectSize && mouseY >=  buttonLocation[j][3] && mouseY <= buttonLocation[j][3] + rectSize)
+      } else if (mouseX >= buttonLocation[j][2] && mouseX <= buttonLocation[j][2] + rectSize && mouseY >=  buttonLocation[j][3] && mouseY <= buttonLocation[j][3] + rectSize)
         strech -= 1;
-  
-}
+    }
   }
 }
