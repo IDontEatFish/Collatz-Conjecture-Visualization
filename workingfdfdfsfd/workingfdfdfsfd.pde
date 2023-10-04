@@ -5,7 +5,7 @@ The Collatz conjecture is one of the most famous Mathematics problems left unsol
 
 It follows a sequence of positive integers. For any integer, say n, the following number in the series is either
 
-                n / 2 (if n is an even integer) or 3n + 1 (if n is odd)   Note: In my program you are able to change each equation
+                n / 2 (if n is an even integer) or 3n + 1 (if n is odd)  
                 
 For example, if we start with a number such as 3. Where n = 3, the following number would be:
 
@@ -29,12 +29,6 @@ If the number is even, rotate counterclockwise by theta and counterclockwise by 
 
 This creates an interesting  visualization where the values can be played with. 
 
-
-
-
-
-
-
 */
 
 
@@ -49,12 +43,12 @@ PVector start;
 PVector pos;
 PVector pos_prev;
 PVector move;
-int start_collatz=5;
-int value=5;
+int start_collatz;
+int value;
 
 float startx, starty;
 
-int rectSize = 40;
+int rectSize = 30;
 
 
 float[][] buttonLocation = new float[3][4];
@@ -62,10 +56,12 @@ int[][] colours = { {52, 78, 65}, {58, 90, 64}, {88, 129, 87}, {88, 129, 87}, {1
 
 
 void setup() {
-  size(1500, 900);
+  size(800, 600);
   
+  frameRate(144);
  
-  
+  value = 5;
+  start_collatz = 5;
   
   startx = width/2;
   starty = height/1.1;
@@ -132,12 +128,4 @@ void draw() {
   pos_prev = pos.copy();
   pos.x += (move.x*strech);
   pos.y += (move.y*strech);
-}
-
-
-void keyPressed() {
-  if (key == BACKSPACE) {
-    setup();
-
-  }
 }

@@ -10,7 +10,7 @@ int next_colatz(int x) {
 void create_text(float clockwise_angle, float counterclockwise_angle, int strech) {
 
 
-  textSize(32);
+  textSize(16);
 
 
   String angle_text_clock = ("Even number angle: " + str(clockwise_angle) + "°");
@@ -34,7 +34,7 @@ void create_button(float rectX, float rectY, int rectSize, color rectColor, Stri
   noStroke();
 
   rect(rectX, rectY, rectSize, rectSize);
-  textSize(64);
+  textSize(30);
   fill(88, 129, 87);
   float textX = rectX + rectSize / 2 + offsetX;
   float textY = rectY + rectSize / 2 + offsetY;
@@ -45,23 +45,23 @@ void create_button(float rectX, float rectY, int rectSize, color rectColor, Stri
 
 void create_GUI() {
 
-  drawOverText(20, 23, 493, 195);
+  drawOverText(10, 15, 300, 150);
 
   fill(255, 255, 255);
   create_text(clockwise_angle, counterclockwise_angle, strech);
 
-  create_button(buttonLocation[0][0] = width/3.3, buttonLocation[0][1] = height / 30, rectSize, color(255, 0, 0), "+", -16, 20.5);
+  create_button(buttonLocation[0][0] = width/3, buttonLocation[0][1] = height / 60, rectSize, color(255, 0, 0), "+", -16, 20.5);
 
-  create_button(buttonLocation[0][2] = width/3.8, buttonLocation[0][3] = height / 30, rectSize, color(255, 0, 0), "-", -11, 17);
+  create_button(buttonLocation[0][2] = width/3.5, buttonLocation[0][3] = height / 60, rectSize, color(255, 0, 0), "-", -11, 20);
 
-  create_button(buttonLocation[1][0] = width/3.3, buttonLocation[1][1] = height / 11, rectSize, color(255, 0, 0), "+", -16, 20.5);
+  create_button(buttonLocation[1][0] = width/3, buttonLocation[1][1] = height / 13, rectSize, color(255, 0, 0), "+", -16, 20.5);
 
-  create_button(buttonLocation[1][2] = width/3.8, buttonLocation[1][3] = height / 11, rectSize, color(255, 0, 0), "-", -11, 17);
+  create_button(buttonLocation[1][2] = width/3.5, buttonLocation[1][3] = height / 13, rectSize, color(255, 0, 0), "-", -11, 20.5);
 
 
-  create_button(buttonLocation[2][0] = width/6.1, buttonLocation[2][1] = height / 7, rectSize, color(255, 0, 0), "+", -16, 20.5);
+  create_button(buttonLocation[2][0] = width/5.5, buttonLocation[2][1] = height / 7.8, rectSize, color(255, 0, 0), "+", -16, 20.5);
 
-  create_button(buttonLocation[2][2] = width/8, buttonLocation[2][3] = height / 7, rectSize, color(255, 0, 0), "-", -11, 17);
+  create_button(buttonLocation[2][2] = width/7.4, buttonLocation[2][3] = height / 7.8, rectSize, color(255, 0, 0), "-", -11, 20.5);
 }
 
 

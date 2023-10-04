@@ -7,3 +7,10 @@ void mouseClicked() {
 
   create_GUI();
 }
+
+void keyPressed() {
+  if (key == BACKSPACE) {
+    setup();
+
+  }
+}
