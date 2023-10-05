@@ -11,7 +11,7 @@
  
  3 (Odd, so the following number is 3n + 1)
  10 (Even so, the following number is n / 2)
- 5 (Odd, so the following number is 3n + 1)                                                                                                                                                                      
+ 5 (Odd, so the following number is 3n + 1)
  16
  
  
@@ -133,7 +133,7 @@ void draw() {
   }
 
   // decide if the position of the circle should move clockwise or counter clockwise
-  if (value%2 == 0) { // if the number is even rotate clockwise
+  if (value % 2 == 0) { // if the number is even rotate clockwise
 
     // NEW COMMAND LEARNED :::: rotate the vector clockwise if the number is even
     move.rotate(clockwise_angle * PI/180);
